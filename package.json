@@ -1,7 +1,11 @@
 {
   "name": "text-editor",
   "version": "1.0.0",
-  "description": "Text editor - PWA",
+  "engines:": {
+    "node": "14.17.3",
+    "npm": "6.14.13"
+  },
+  "description": "just another text editor",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
@@ -12,7 +16,7 @@
     "client": "cd client && npm start"
   },
   "keywords": [],
-  "author": "Sivaranjani",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
@@ -21,14 +25,5 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
-    
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sivaparam/text-editor.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Sivaparam/text-editor/issues"
-  },
-  "homepage": "https://github.com/Sivaparam/text-editor#readme"
+  }
 }
