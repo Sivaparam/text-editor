@@ -40,8 +40,10 @@ npm run start - starts the applicaiton from terminal
 
 
 ### Github URL:
+https://github.com/Sivaparam/text-editor
 
 ### Heroku: 
+https://text-editor-sep21.herokuapp.com/
 
 
 

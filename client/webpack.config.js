@@ -22,6 +22,10 @@ module.exports = () => {
         template: './index.html',
         title: 'JATE'
       }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'service-worker.js'
+      }),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -39,10 +43,6 @@ module.exports = () => {
           }
         ]
       }),
-      new InjectManifest({
-        swSrc: './src-sw.js',
-        swDest: 'service-worker.js'
-      })
     ],
 
 
@@ -54,15 +54,15 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-            plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
-          },
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+            },
+          }
         }
-      } 
       ],
     },
   };
