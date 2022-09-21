@@ -20,13 +20,15 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Text Editor'
+        title: 'webpack plugin'
       }),
       new WebpackPwaManifest({
         name: 'Text Editor - Progressive Web App',
         Short_name: 'PWA',
         description: 'PWA - Text Editor',
         background_color: 'white',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
