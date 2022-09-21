@@ -20,12 +20,14 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'webpack plugin'
+        title: 'JATE'
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'Text Editor - Progressive Web App',
-        Short_name: 'PWA',
-        description: 'PWA - Text Editor',
+        Short_name: 'JATE',
+        description: 'Just Another Text Editor',
         background_color: 'white',
         start_url: '/',
         publicPath: '/',
@@ -57,6 +59,7 @@ module.exports = () => {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
           },
         }
       } 
