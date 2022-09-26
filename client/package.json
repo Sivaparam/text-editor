@@ -1,9 +1,6 @@
 {
   "name": "text-editor",
-  "engines:": {
-    "node": "18.4.0",
-    "npm": "8.12.1"
-  },
+  
   "scripts": {
     "dev": "webpack-dev-server -d source-map",
     "build": "webpack --mode production",
