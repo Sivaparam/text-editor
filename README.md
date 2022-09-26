@@ -17,8 +17,8 @@
 
 * Given a text editor web application, 
 * WHEN user opens applicaiton in editor, THEN user should see a client server folder structure.
-* WHEN user runs 'npm run start' from the root directory, THEN user dind that applcaition starts up the backend and server and client.
-* WHEN user rus text editor applcaition from terminal, THEN user finds that Javascript files have been bundled using webpack.
+* WHEN user runs 'npm run start' from the root directory, THEN user find that applcaition starts up the backend and server and client.
+* WHEN user runs text editor applcaition from terminal, THEN user finds that Javascript files have been bundled using webpack.
 * WHEN user runs webpack plugins, THEN user finds generated HTML file, service worker and a manifest file.
 * WHEN user users next-gen Javascript application, THEN user finds that the text editor still functions in the browser without errors. 
 * WHEN user opens the test editor, THEN user finfs that IndexedDB has immediately cerated a database storage. 
@@ -37,7 +37,9 @@ npm run start - starts the applicaiton from terminal
 
 ## Screenshots:
 
+![alt text](./client/src/images/offline.png)
 
+![alt text](./client/src/images/service_worker.png)
 
 ### Github URL:
 https://github.com/Sivaparam/text-editor
